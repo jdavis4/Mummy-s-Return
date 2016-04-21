@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AutoLight.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AutoLight.cs" Line="36" Column="6" />
+      <File FileName="Assets/Scripts/MiniGameTrigger.cs" Line="6" Column="25" />
+      <File FileName="Assets/MiniGames/Puzzle MiniGame/Scripts/CheckWin.cs" Line="12" Column="39" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="18" Column="148" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Jasmine/Documents/DIS - Study Abroad/Game Development/Mummy's Return/Assets/Scripts/AutoLight.cs" line="26" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
