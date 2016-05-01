@@ -16,8 +16,11 @@ public class MiniGameTrigger : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.name == "Player")
+		Debug.Log ("minigame trigger entered: " + this.name);
+		if (other.name == "Player") {
+			Debug.Log ("player touched minigame trigger");
 			Application.LoadLevel (nextScene);
+		}
 	}
 
 }

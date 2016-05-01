@@ -36,7 +36,7 @@ public class HashIDs : MonoBehaviour
         //angularSpeedFloat = Animator.StringToHash("AngularSpeed");
 		//openBool = Animator.StringToHash("Open");
 		runBool = Animator.StringToHash("Run");
-		idleBool = Animator.StringToHash ("Idle");
-		dieBool = Animator.StringToHash ("Die");
+		idleBool = Animator.StringToHash("Idle");
+		dieBool = Animator.StringToHash("Die");
 	}
 }
