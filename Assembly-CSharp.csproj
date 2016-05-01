@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D78F4F3F-6FEE-ADCB-3F39-A1ECCCA5CF10}</ProjectGuid>
+    <ProjectGuid>{123C439C-6D65-09F2-B3E5-2CB2DDC77FB6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,10 +57,13 @@
      <Compile Include="Assets\MiniGames\Puzzle MiniGame\Scripts\DragAndDrop.cs" />
      <Compile Include="Assets\MiniGames\Puzzle MiniGame\Scripts\InBucket.cs" />
      <Compile Include="Assets\Scripts\AutoLight.cs" />
+     <Compile Include="Assets\Scripts\CameraControllerChild.cs" />
      <Compile Include="Assets\Scripts\CameraControllerOrig.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\HashIDs.cs" />
      <Compile Include="Assets\Scripts\MiniGameTrigger.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <None Include="Assets\Downloaded Assets\Mummy\Materials\myStandart.shader" />
  <Reference Include="UnityEngine.Networking">

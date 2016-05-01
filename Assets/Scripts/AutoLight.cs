@@ -10,14 +10,14 @@ public class AutoLight : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		lt = gameObject.GetComponent<Light>();
-		Debug.Log (lt.enabled);
+		//Debug.Log (lt.enabled);
 		//lt.range = lightRange;
 
 		sphereCollider = gameObject.GetComponent<SphereCollider> ();
 		sphereCollider.radius = triggerRange;
 
 		lt.enabled = false;
-		Debug.Log (lt.enabled);
+		//Debug.Log (lt.enabled);
 
 	}
 	
