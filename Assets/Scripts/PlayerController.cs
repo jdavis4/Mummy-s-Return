@@ -17,8 +17,6 @@ public class PlayerController : MonoBehaviour
 	void Awake()
 	{
 		anim = GetComponent <Animator> ();
-		hash = GameObject.FindGameObjectWithTag("GameController").GetComponent<HashIDs>();
-
 		m_Cam = Camera.main.transform;
 	}
 		
@@ -32,15 +30,17 @@ public class PlayerController : MonoBehaviour
 
 		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical); //currently controls movement
 
-		//Vector3 m_Mov = moveVertical*m_Cam.forward + moveHorizontal*m_Cam.right;
+		if (moveHorizontal != 0.0f) {
+			float rotationSpeed = 1.5f;
+			// rotate player 
+			GetComponent<Rigidbody> ().rotation = GetComponent<Rigidbody> ().rotation * Quaternion.Euler (0, moveHorizontal * rotationSpeed, 0);
+		}
+
 		Vector3 m_Mov = moveVertical*transform.forward + moveHorizontal*transform.right;
 		Vector3 mVel = Move(m_Mov);
 		
 
 		if (moveHorizontal != 0f || moveVertical != 0f) {
-			// ... set the players rotation and set the speed parameter to 5.5f.
-			Rotating (moveHorizontal, moveVertical);
-
 			anim.SetBool ("Move", true);
 			anim.SetBool ("Stand", false);
 
@@ -54,22 +54,7 @@ public class PlayerController : MonoBehaviour
 			
 
 	}
-
-
-	void Rotating (float horizontal, float vertical) //Ethan code. Have not touched.
-	{
-		// Create a new vector of the horizontal and vertical inputs.
-		Vector3 targetDirection = new Vector3(horizontal, 0f, vertical);
-
-		// Create a rotation based on this new vector assuming that up is the global y axis.
-		Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
-
-		// Create a rotation that is an increment closer to the target rotation from the player's rotation.
-		Quaternion newRotation = Quaternion.Lerp(GetComponent<Rigidbody>().rotation, targetRotation, turnSmoothing * Time.deltaTime);
-
-		// Change the players rotation to this new rotation.
-		GetComponent<Rigidbody>().MoveRotation(newRotation);
-	}
+		
 
 	public Vector3 Move(Vector3 move) //Ethan code. Mostly commented out stuff, but there have been some changes as well.
 	{
@@ -77,30 +62,11 @@ public class PlayerController : MonoBehaviour
 		// turn amount and forward amount required to head in the desired
 		// direction.
 		if (move.magnitude > 1f) move.Normalize();
-		move = transform.InverseTransformDirection(move); //when this line is commented out the desired movement mechanics are used up until the first turn in the maze
-//		CheckGroundStatus();
+		//move = transform.InverseTransformDirection(move); //when this line is commented out the desired movement mechanics are used up until the first turn in the maze
 		//move = Vector3.ProjectOnPlane(move, m_GroundNormal); //orig code line
 		move = Vector3.Project(move, this.transform.forward);
-		//Debug.Log (move);
-//		m_TurnAmount = Mathf.Atan2(move.x, move.z);
-//		m_ForwardAmount = move.z;
 
-//		ApplyExtraTurnRotation();
-
-//		// control and velocity handling is different when grounded and airborne:
-//		if (m_IsGrounded)
-//		{
-//			HandleGroundedMovement(crouch, jump);
-//		}
-//		else
-//		{
-//			HandleAirborneMovement();
-//		}
-//
-//		ScaleCapsuleForCrouching(crouch);
-//		PreventStandingInLowHeadroom();
-//
-//		// send input and other state parameters to the animator
+		// send input and other state parameters to the animator
 		Vector3 mVelocity = (move*movementSpeed);
 		return mVelocity;
 	}
