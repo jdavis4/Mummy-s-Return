@@ -45,27 +45,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Downloaded Assets\Mummy\C#\Axe.cs" />
-     <Compile Include="Assets\Downloaded Assets\Mummy\C#\BaseAnimController.cs" />
-     <Compile Include="Assets\Downloaded Assets\Mummy\C#\CameraController.cs" />
-     <Compile Include="Assets\Downloaded Assets\Mummy\C#\MainController.cs" />
-     <Compile Include="Assets\Downloaded Assets\Mummy\C#\Spear.cs" />
-     <Compile Include="Assets\Downloaded Assets\Mummy\C#\Spear_Shield.cs" />
-     <Compile Include="Assets\Downloaded Assets\Mummy\C#\Sword_Shield.cs" />
-     <Compile Include="Assets\Downloaded Assets\Mummy\C#\Weaponless.cs" />
      <Compile Include="Assets\MiniGames\Puzzle MiniGame\Scripts\CheckWin.cs" />
      <Compile Include="Assets\MiniGames\Puzzle MiniGame\Scripts\DragAndDrop.cs" />
      <Compile Include="Assets\MiniGames\Puzzle MiniGame\Scripts\InBucket.cs" />
      <Compile Include="Assets\Scripts\AutoLight.cs" />
      <Compile Include="Assets\Scripts\CameraControllerChild.cs" />
-     <Compile Include="Assets\Scripts\CameraControllerOrig.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Scripts\HashIDs.cs" />
      <Compile Include="Assets\Scripts\MiniGameTrigger.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
-     <None Include="Assets\Downloaded Assets\Mummy\Materials\myStandart.shader" />
+     <Compile Include="Assets\Scripts\StartScreen.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
