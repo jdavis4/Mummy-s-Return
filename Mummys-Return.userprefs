@@ -2,15 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerHealth.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="58" Column="1" />
-      <File FileName="Assets/Scripts/HashIDs.cs" Line="16" Column="15" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="87" Column="1" />
-      <File FileName="Assets/Scripts/CameraControllerChild.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="81" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="9" Column="52" />
       <File FileName="../Camera Exercise/Assets/Done/DoneScripts/PlayerScripts/DonePlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="../Camera Exercise/Assets/Standard Assets/Characters/RollerBall/Scripts/BallUserControl.cs" Line="51" Column="90" />
+      <File FileName="../Camera Exercise/Assets/Standard Assets/Characters/RollerBall/Scripts/BallUserControl.cs" Line="1" Column="1" />
       <File FileName="../Camera Exercise/Assets/Standard Assets/Characters/RollerBall/Scripts/Ball.cs" Line="1" Column="1" />
-      <File FileName="../Camera Exercise/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="121" Column="44" />
+      <File FileName="../Camera Exercise/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="1" Column="1" />
       <File FileName="../Camera Exercise/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" Line="1" Column="1" />
+      <File FileName="../RollABall/Assets/Scripts/PlayerController.cs" Line="7" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

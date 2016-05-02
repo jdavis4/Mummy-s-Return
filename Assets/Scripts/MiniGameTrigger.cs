@@ -7,7 +7,8 @@ public class MiniGameTrigger : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		if (nextScene == "" || nextScene == null)
+			GetComponent<BoxCollider> ().enabled = false;
 	}
 	
 	// Update is called once per frame
